@@ -37,6 +37,8 @@ setTimeout(function(){
     }
   };
   console.log(numeriUtente);
+  // Messaggio con quanti numeri l'utente si è ricordato
+    // Per ogni numero inserito dall'utente controllo se è presente nell'array PC --> punteggio++
   var punteggio = 0;
   for (var i = 0; i < numeriUtente.length; i++) {
     if (numeriPC.includes(numeriUtente[i])) {
@@ -44,8 +46,5 @@ setTimeout(function(){
     }
   };
   console.log(punteggio);
+  alert("Il tuo punteggio è: " + punteggio);
 }, delayTime * 1000);
-
-
-// Messaggio con quanti numeri l'utente si è ricordato
-  // Per ogni numero inserito dall'utente controllo se è presente nell'array PC --> punteggio++
