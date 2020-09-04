@@ -37,3 +37,10 @@ while (numeriUtente.length < 5) {
 console.log(numeriUtente);
 // Messaggio con quanti numeri l'utente si è ricordato
   // Per ogni numero inserito dall'utente controllo se è presente nell'array PC --> punteggio++
+var punteggio = 0;
+for (var i = 0; i < numeriUtente.length; i++) {
+  if (numeriPC.includes(numeriUtente[i])) {
+    punteggio++;
+  }
+};
+console.log(punteggio);
